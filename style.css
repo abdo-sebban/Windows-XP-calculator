@@ -1,0 +1,173 @@
+body
+{
+    font-family: "MS Sans Serif", sans-serif;
+    background-image: url("img/bg.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.window
+{
+    width: 380px;
+    background: #ECE9D8;
+    border: 2px outset #ECE9D8;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.title-bar
+{
+    background-color: blue;
+    color: white;
+    padding: 3px 6px;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #316AC5;
+}
+
+.title-bar .title
+{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.title-bar .icon
+{
+    width: 16px;
+    height: 16px;
+    background-image: url(img/Calculator\ Icon.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: black;
+}
+
+.title-bar .controls
+{
+    display: flex;
+    gap: 2px;
+}
+
+.title-bar .controls span
+{
+    width: 16px;
+    height: 14px;
+    background: #ECE9D8;
+    border: 1px outset #ECE9D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    color: black;
+    cursor: pointer;
+    font-family: "Marlett", sans-serif;
+}
+
+.title-bar .controls span:hover
+{
+    border: 1px inset #ECE9D8;
+}
+
+.title-bar .controls .close
+{
+    background: #E81123;
+    color: white;
+}
+
+.menu-bar
+{
+    display: flex;
+    background: #ECE9D8;
+    padding: 3px 6px;
+    font-size: 11px;
+    border-bottom: 1px solid #ACA899;
+}
+
+.menu-bar span
+{
+padding: 3px 8px;
+cursor: pointer;
+}
+
+.menu-bar span:hover
+{
+background: #316AC5;
+color: white;
+}
+
+.display
+{
+    background: white;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-family: "MS Sans Serif", monospace;
+    text-align: right;
+    border: 2px inset #ECE9D8;
+    margin: 10px;
+    min-height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.buttons
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4px; 
+    padding: 8px 10px 10px;
+}
+
+.buttons div
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.buttons button
+{
+    flex: 1;
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #999;
+    background: #F0F0F0;
+    cursor: pointer;
+}
+  
+.buttons button:active
+{
+    border: 1px inset #999;
+}
+
+button
+{
+    color: #0A5BCC;
+}
+.RED
+{
+    color: red;
+}
+.window
+{
+    position: absolute;
+}
+  
+.title-bar
+{
+    cursor: move;
+    user-select: none;
+}
+.btn
+{
+    border: 2px inset #ECE9D8;
+}
